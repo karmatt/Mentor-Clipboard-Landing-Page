@@ -5,22 +5,23 @@
 }
 :root {
     --color-strong-cyan: hsl(171, 66%, 44%);
-    --color-dark-strong-cyan: #1B917A;
     --color-light-blue: hsl(233, 100%, 69%);
-    --color-dark-blue: #3F49DA;
     --color-dark-grayish-blue: hsl(210, 10%, 33%);
     --color-grayish-blue: hsl(201, 11%, 66%);
     --color-light-gray: hsl(220, 18%, 97%);
 
     --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
     font-size: 18px;
+
+    --shadow-primary: inset 0px -3px 0px 0px hsla(0, 0%, 0%, 0.15), 0px 10px 20px hsla(160, 64%, 72%, 0.5);
+    --shadow-secondary: inset 0px -3px 0px 0px hsla(0, 0%, 0%, 0.15), 0px 10px 20px hsla(0, 0%, 0%, 0.1);
 }
 body {
     font-family: var(--font-bai-jamjuree);
     line-height: 1.6;
 }
 img {
-    width: 100%;
+    max-width: 100%;
 }
 ul {
     list-style: none;
@@ -66,34 +67,46 @@ footer {
     margin-bottom: 3rem;
     text-align: center;
 }
+.download { 
+    display: flex;
+    flex-direction: column;
+}
 .download__button {
+    align-self: center;
     border: none;
     border-radius: 2rem;
     color: var(--color-light-gray);
-    display: block;
     font-family: var(--font-bai-jamjuree);
     font-size: 1em;
-    margin: 1.5rem auto 0;
-    padding: 1rem;
+    margin: 1rem 0;
+    padding: 0.8rem;
     width: 90%;
 }
 .download__button--primary {
     background-color: var(--color-strong-cyan);
+    box-shadow: var(--shadow-primary)
 }
 .download__button--secondary {
     background-color: var(--color-light-blue);
+    box-shadow: var(--shadow-secondary);
 }
-.features__item {
+.features {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
+.features__image {
+    display: block;
+    margin: auto;
+}
 .features__item--top {
     margin-top: 3rem;
 }
+.features__item {
+    max-width: 345px;
+}
 .features__image {
     margin-bottom: 1.75rem;
-    max-width: 15%;
 }
 .company-logo-container {
     align-items: center;
@@ -114,7 +127,7 @@ footer {
     flex-direction: column;
 }
 .footer__logo {
-    max-width: 20%;
+    max-width: 16%;
 }
 .footer__nav-list {
     display: flex;
@@ -144,4 +157,11 @@ footer {
 }
 .attribution__link { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 640px) {
+    body {
+    }
 }
