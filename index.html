@@ -13,10 +13,7 @@
 </head>
 <body>
   <header class="hero">
-    <picture class="hero__image">
-      <source media="(min-width: 376px)" srcset="./images/bg-header-desktop.png" class="hero-image--desktop">
-      <img src="./images/bg-header-mobile.png" alt="hero image" class="hero-image--mobile" aria-hidden="true">
-    </picture>
+    <img class="hero__image" src="./images/logo.svg" alt="Clipboard logo" aria-hidden="true">
   </header>
   <main class="main">
     <section class="about container">
@@ -33,31 +30,33 @@
       <p class="description">Clipboard instantly stores any item you copy in the cloud, 
       meaning you can access your snippets immediately on all your 
       devices. Our Mac and iOS apps will help you organize everything.</p>
-      <img src="./images/image-computer.png" alt="iMac compter" aria-hidden="true">
-      <ul class="features__list">
-        <li class="features__item features__item--top">
-          <h3 class="heading heading--small">Quick Search</h3>
-          <p class="description">Easily search your snippets by content, category, web address, application, and more.</p>
-        </li>
-        <li class="features__item">
-          <h3 class="heading heading--small">iCloud Sync</h3>
-          <p class="description">Instantly saves and syncs snippets across all your devices.</p>
-        </li>
-        <li class="features__item">
-          <h3 class="heading heading--small">Complete History</h3>
-          <p class="description">Retrieve any snippets from the first moment you started using the app.</p>
-        </li>
-      </ul>
+      <div class="container--wide">
+        <img class="device-image"src="./images/image-computer.png" alt="iMac computer" aria-hidden="true">
+        <ul class="features__list">
+          <li class="features__item features__item--top">
+            <h3 class="heading heading--small">Quick Search</h3>
+            <p class="description">Easily search your snippets by content, category, web address, application, and more.</p>
+          </li>
+          <li class="features__item">
+            <h3 class="heading heading--small">iCloud Sync</h3>
+            <p class="description">Instantly saves and syncs snippets across all your devices.</p>
+          </li>
+          <li class="features__item">
+            <h3 class="heading heading--small">Complete History</h3>
+            <p class="description">Retrieve any snippets from the first moment you started using the app.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="accessible container">
       <h2 class="heading heading--medium">Access Clipboard anywhere</h2>
       <p class="description">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
-      <img src="./images/image-devices.png" alt="devices" class="devices" aria-hidden="true">
+      <img class="device-image"src="./images/image-devices.png" alt="devices" aria-hidden="true">
     </section>
     <section class="workflow container container--short">
       <h2 class="heading heading--medium">Supercharge your workflow</h2>
       <p class="description">We’ve got the tools to boost your productivity.</p>
-      <ul class="features">
+      <ul class="features__list">
         <li class="features__item">
           <img src="./images/icon-blacklist.svg" alt="paper with a list" aria-hidden="true" class="features__image">
           <h3 class="heading heading--small">Create blacklists</h3>
