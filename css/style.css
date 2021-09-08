@@ -6,7 +6,9 @@
 }
 :root {
     --color-strong-cyan: hsl(171, 66%, 44%);
+    --color-strong-cyan-bright: hsl(171, 67%, 47%);
     --color-light-blue: hsl(233, 100%, 69%);
+    --color-light-blue-bright: hsl(233, 100%, 72%);
     --color-dark-grayish-blue: hsl(210, 10%, 33%);
     --color-grayish-blue: hsl(201, 11%, 66%);
     --color-light-gray: hsl(220, 18%, 97%);
@@ -106,9 +108,15 @@ footer {
     background-color: var(--color-strong-cyan);
     box-shadow: var(--shadow-primary)
 }
+.download__button--primary:hover {
+    background-color: var(--color-strong-cyan-bright);
+}
 .download__button--secondary {
     background-color: var(--color-light-blue);
     box-shadow: var(--shadow-secondary);
+}
+.download__button--secondary:hover {
+    background-color: var(--color-light-blue-bright);
 }
 .features-list {
     align-items: center;
