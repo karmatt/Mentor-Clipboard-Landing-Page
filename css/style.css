@@ -118,6 +118,9 @@ footer {
 .download__button--secondary:hover {
     background-color: var(--color-light-blue-bright);
 }
+.download__button--primary:hover, .download__button--secondary:hover {
+    cursor: pointer;
+}
 .features-list {
     align-items: center;
     display: flex;
